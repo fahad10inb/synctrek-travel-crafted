@@ -6,11 +6,8 @@ const Download = () => {
   const { toast } = useToast();
 
   const handleDownload = () => {
-    // In a real implementation, this would trigger the APK download
-    toast({
-      title: "Download Starting Soon",
-      description: "The SyncTrek beta APK will be available for download shortly. We'll notify you when it's ready!",
-    });
+    // Trigger the APK download by opening the GitHub release link
+    window.open("https://github.com/fahad10inb/SyncTrek/releases/download/v1.0.0.0/app-release.apk", "_blank");
   };
 
   const features = [
