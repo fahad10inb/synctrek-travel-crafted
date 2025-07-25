@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ThemeToggle from "@/components/ThemeToggle";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,9 +55,8 @@ const Header = () => {
             </button>
           </div>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
-            <ThemeToggle />
+          {/* Desktop CTA */}
+          <div className="hidden md:block">
             <Button 
               onClick={() => scrollToSection('download')}
               className="btn-primary"
@@ -80,10 +78,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border">
             <div className="flex flex-col space-y-4 px-4 py-6">
-              <div className="flex justify-between items-center mb-4">
-                <span className="text-sm font-medium text-muted-foreground">Theme</span>
-                <ThemeToggle />
-              </div>
               <button 
                 onClick={() => scrollToSection('features')}
                 className="text-left text-foreground hover:text-primary transition-colors duration-300"
