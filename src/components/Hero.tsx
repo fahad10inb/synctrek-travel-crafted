@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -21,17 +21,11 @@ const Hero = () => {
       {/* Background decorative elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-synctrek-accent/10 via-transparent to-synctrek-primary/10"></div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-synctrek-accent/5 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-synctrek-primary/5 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-      
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-synctrek-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+
       <div className="container mx-auto px-4 py-20 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-slide-up">
-          {/* Beta Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 text-primary mb-8">
-            <Sparkles size={16} />
-            <span className="text-sm font-medium">Now in Beta Testing</span>
-          </div>
-
-          {/* Main Headline */}
+          {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-center">
             <span className="block">Your AI-Powered</span>
             <span className="block text-gradient">Travel Assistant</span>
@@ -43,7 +37,7 @@ const Hero = () => {
             Create personalized itineraries that perfectly match your preferences.
           </p>
 
-          {/* Key Features Preview */}
+          {/* Feature Tags */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mb-12 text-sm md:text-base">
             <div className="flex items-center gap-2 text-muted-foreground">
               <div className="w-2 h-2 bg-synctrek-accent rounded-full flex-shrink-0"></div>
@@ -59,19 +53,19 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Buttons */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               onClick={scrollToDownload}
-              className="btn-primary group w-full sm:w-auto"
+              className="w-64 py-4 text-lg sm:text-xl font-semibold group btn-primary"
             >
               Download Beta
-              <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight size={24} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
               onClick={scrollToFeatures}
               variant="outline"
-              className="btn-secondary w-full sm:w-auto"
+              className="w-64 py-4 text-lg sm:text-xl font-semibold btn-secondary"
             >
               Explore Features
             </Button>
