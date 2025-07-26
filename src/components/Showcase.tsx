@@ -15,7 +15,6 @@ import Image1 from "@/assets/Image-1.png";
 import Image2 from "@/assets/Image-2.png";
 import Image3 from "@/assets/Image-3.png";
 import Image4 from "@/assets/Image-4.png";
-import { Button } from "@/components/ui/button";
 
 const Showcase = () => {
   const [activeTab, setActiveTab] = useState("screenshots");
@@ -42,7 +41,7 @@ const Showcase = () => {
       image: Image3,
     },
     {
-      title: "Personalized Recommendations",
+      title: "Tailored Picks",
       description: "Discover hotels, restaurants, and experiences tailored to you",
       image: Image4,
     },
@@ -142,41 +141,41 @@ const Showcase = () => {
   ];
 
   return (
-    <section id="showcase" className="py-20 bg-secondary/30 relative overflow-hidden">
+    <section id="showcase" className="py-20 bg-slate-900 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "2s" }}></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-full border border-primary/20 mb-6">
-            <span className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full animate-pulse"></span>
-            <span className="text-sm font-medium bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full border border-blue-500/20 mb-6">
+            <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></span>
+            <span className="text-sm font-medium bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
               EXCLUSIVE PREVIEW
             </span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-slate-100 via-blue-400 to-purple-400 bg-clip-text text-transparent">
             See <span className="text-gradient animate-pulse">SyncTrek</span> in Action
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
             Experience the future of travel planning through our showcase of SyncTrek's revolutionary AI interface and next-generation features.
           </p>
         </div>
 
         {/* Enhanced Tab Navigation - Mobile Optimized */}
         <div className="flex justify-center mb-12 md:mb-16 px-4">
-          <div className="bg-card/80 backdrop-blur-xl rounded-2xl p-2 md:p-3 border border-border/50 shadow-2xl shadow-primary/10 w-full max-w-md">
+          <div className="bg-slate-800/80 backdrop-blur-xl rounded-2xl p-2 md:p-3 border border-slate-700/50 shadow-2xl shadow-blue-500/10 w-full max-w-md">
             <button
               onClick={() => setActiveTab("screenshots")}
               className={`w-1/2 px-4 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-500 relative overflow-hidden group text-sm md:text-base ${
                 activeTab === "screenshots"
-                  ? "bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-2xl shadow-primary/30 scale-105"
-                  : "text-muted-foreground hover:text-foreground hover:bg-primary/5"
+                  ? "bg-gradient-to-r from-blue-500 to-blue-500/80 text-white shadow-2xl shadow-blue-500/30 scale-105"
+                  : "text-slate-400 hover:text-slate-100 hover:bg-blue-500/5"
               }`}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Monitor size={18} className="inline mr-2 relative z-10" />
               <span className="relative z-10 hidden sm:inline">Screenshots</span>
               <span className="relative z-10 sm:hidden">Screens</span>
@@ -185,11 +184,11 @@ const Showcase = () => {
               onClick={() => setActiveTab("demo")}
               className={`w-1/2 px-4 md:px-8 py-3 md:py-4 rounded-xl font-semibold transition-all duration-500 relative overflow-hidden group text-sm md:text-base ${
                 activeTab === "demo"
-                  ? "bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-2xl shadow-primary/30 scale-105"
-                  : "text-muted-foreground hover:text-foreground hover:bg-primary/5"
+                  ? "bg-gradient-to-r from-blue-500 to-blue-500/80 text-white shadow-2xl shadow-blue-500/30 scale-105"
+                  : "text-slate-400 hover:text-slate-100 hover:bg-blue-500/5"
               }`}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <Smartphone size={18} className="inline mr-2 relative z-10" />
               <span className="relative z-10 hidden sm:inline">Live Demo</span>
               <span className="relative z-10 sm:hidden">Demo</span>
@@ -197,24 +196,58 @@ const Showcase = () => {
           </div>
         </div>
 
-        {/* Screenshots Tab */}
+        {/* Screenshots Tab - Better Vertical Layout with Updated Colors */}
         {activeTab === "screenshots" && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {screenshots.map((screenshot, index) => (
-              <div key={index} className="feature-card hover-lift group relative overflow-hidden" style={{ animationDelay: `${index * 0.2}s` }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl mb-6 overflow-hidden relative">
-                  <img
-                    src={screenshot.image}
-                    alt={screenshot.title}
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="max-w-7xl mx-auto">
+            {/* First Row - 2 Screenshots */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              {screenshots.slice(0, 2).map((screenshot, index) => (
+                <div key={index} className="bg-slate-800/90 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group relative overflow-hidden" style={{ animationDelay: `${index * 0.2}s` }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="flex flex-col lg:flex-row gap-8 items-center">
+                    <div className="w-full lg:w-80 flex-shrink-0">
+                      <div className="aspect-[9/16] bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl overflow-hidden relative shadow-lg">
+                        <img
+                          src={screenshot.image}
+                          alt={screenshot.title}
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      </div>
+                    </div>
+                    <div className="flex-1 text-center lg:text-left lg:pl-4">
+                      <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-slate-100 group-hover:text-blue-400 transition-colors duration-300">{screenshot.title}</h3>
+                      <p className="text-slate-300 group-hover:text-slate-100 transition-colors duration-300 text-lg leading-relaxed">{screenshot.description}</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">{screenshot.title}</h3>
-                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">{screenshot.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
+            
+            {/* Second Row - 2 Screenshots (Changed to Left Alignment) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {screenshots.slice(2, 4).map((screenshot, index) => (
+                <div key={index + 2} className="bg-slate-800/90 backdrop-blur-xl rounded-2xl p-8 border border-slate-700/50 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group relative overflow-hidden" style={{ animationDelay: `${(index + 2) * 0.2}s` }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="flex flex-col lg:flex-row gap-8 items-center">
+                    <div className="w-full lg:w-80 flex-shrink-0">
+                      <div className="aspect-[9/16] bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl overflow-hidden relative shadow-lg">
+                        <img
+                          src={screenshot.image}
+                          alt={screenshot.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      </div>
+                    </div>
+                    <div className="flex-1 text-center lg:text-left">
+                      <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-slate-100 group-hover:text-blue-400 transition-colors duration-300">{screenshot.title}</h3>
+                      <p className="text-slate-300 group-hover:text-slate-100 transition-colors duration-300 text-lg leading-relaxed">{screenshot.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         )}
 
@@ -223,11 +256,11 @@ const Showcase = () => {
           <div className="max-w-5xl mx-auto">
             {/* Premium Video Player */}
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-xl opacity-75 animate-pulse"></div>
-              <div className="relative bg-gradient-to-br from-card/90 to-card/50 backdrop-blur-xl rounded-2xl p-6 border border-border/50 shadow-2xl">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20 rounded-3xl blur-xl opacity-75 animate-pulse"></div>
+              <div className="relative bg-gradient-to-br from-slate-800/90 to-slate-900/50 backdrop-blur-xl rounded-2xl p-6 border border-slate-700/50 shadow-2xl">
                 <div
                   ref={containerRef}
-                  className={`relative aspect-video bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10 rounded-xl overflow-hidden group ${
+                  className={`relative aspect-video bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-blue-500/10 rounded-xl overflow-hidden group ${
                     isFullscreen ? "fixed inset-0 z-50 rounded-none" : ""
                   }`}
                   onMouseEnter={() => setShowControls(true)}
@@ -294,12 +327,12 @@ const Showcase = () => {
                   <div
                     className={`absolute -inset-2 bg-gradient-to-r ${feature.gradient} rounded-2xl blur-xl opacity-0 group-hover:opacity-75 transition-opacity duration-500`}
                   ></div>
-                  <div className="relative bg-card/80 backdrop-blur-xl rounded-xl p-4 md:p-6 border border-border/50 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2 active:scale-95">
-                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="relative bg-slate-800/80 backdrop-blur-xl rounded-xl p-4 md:p-6 border border-slate-700/50 hover:border-blue-500/30 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 active:scale-95">
+                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                       <span className="text-2xl md:text-3xl filter drop-shadow-lg">{feature.icon}</span>
                     </div>
-                    <h4 className="font-bold mb-2 md:mb-3 text-center group-hover:text-primary transition-colors duration-300 text-sm md:text-base">{feature.title}</h4>
-                    <p className="text-xs md:text-sm text-muted-foreground text-center leading-relaxed group-hover:text-foreground transition-colors duration-300">
+                    <h4 className="font-bold mb-2 md:mb-3 text-center group-hover:text-blue-400 transition-colors duration-300 text-sm md:text-base text-slate-100">{feature.title}</h4>
+                    <p className="text-xs md:text-sm text-slate-400 text-center leading-relaxed group-hover:text-slate-200 transition-colors duration-300">
                       {feature.description}
                     </p>
                   </div>
@@ -311,14 +344,14 @@ const Showcase = () => {
 
         {/* Enhanced Beta Notice - Mobile Optimized */}
         <div className="mt-12 md:mt-16 text-center px-4">
-          <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 text-primary rounded-2xl border border-primary/30 shadow-xl shadow-primary/10 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 active:scale-95 max-w-full">
+          <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-8 py-3 md:py-4 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-blue-500/10 text-blue-600 rounded-2xl border border-blue-500/30 shadow-xl shadow-blue-500/10 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 hover:scale-105 active:scale-95 max-w-full">
             <div className="relative flex-shrink-0">
-              <span className="w-2 md:w-3 h-2 md:h-3 bg-gradient-to-r from-primary to-accent rounded-full block animate-pulse"></span>
-              <span className="absolute inset-0 w-2 md:w-3 h-2 md:h-3 bg-gradient-to-r from-primary to-accent rounded-full animate-ping"></span>
+              <span className="w-2 md:w-3 h-2 md:h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full block animate-pulse"></span>
+              <span className="absolute inset-0 w-2 md:w-3 h-2 md:h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-ping"></span>
             </div>
-            <span className="font-bold text-sm md:text-lg">Currently in Exclusive Beta</span>
-            <span className="text-muted-foreground hidden sm:inline">•</span>
-            <span className="font-medium text-xs md:text-base hidden sm:inline">Revolutionary features coming soon</span>
+            <span className="font-bold text-sm md:text-lg text-slate-100">Currently in Exclusive Beta</span>
+            <span className="text-slate-400 hidden sm:inline">•</span>
+            <span className="font-medium text-xs md:text-base hidden sm:inline text-slate-300">Revolutionary features coming soon</span>
           </div>
         </div>
       </div>
