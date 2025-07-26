@@ -288,7 +288,7 @@ const Showcase = () => {
             </div>
 
             {/* Enhanced Feature Grid - Mobile Optimized */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-16 px-4 md:px-0">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-8 md:mt-12 px-4 md:px-0">
               {videoFeatures.map((feature, index) => (
                 <div key={index} className="relative group cursor-pointer" style={{ animationDelay: `${index * 0.15}s` }}>
                   <div
@@ -306,23 +306,11 @@ const Showcase = () => {
                 </div>
               ))}
             </div>
-
-            {/* Mobile-Optimized Call to Action */}
-            <div className="text-center mt-12 md:mt-16 px-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white font-bold px-6 md:px-8 py-4 md:py-6 rounded-2xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 active:scale-95 transition-all duration-300 text-base md:text-lg w-full sm:w-auto touch-manipulation"
-              >
-                <Play size={18} className="mr-2 md:mr-3" />
-                <span className="hidden sm:inline">Experience SyncTrek Now</span>
-                <span className="sm:hidden">Try SyncTrek</span>
-              </Button>
-            </div>
           </div>
         )}
 
         {/* Enhanced Beta Notice - Mobile Optimized */}
-        <div className="mt-16 md:mt-20 text-center px-4">
+        <div className="mt-12 md:mt-16 text-center px-4">
           <div className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 text-primary rounded-2xl border border-primary/30 shadow-xl shadow-primary/10 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 active:scale-95 max-w-full">
             <div className="relative flex-shrink-0">
               <span className="w-2 md:w-3 h-2 md:h-3 bg-gradient-to-r from-primary to-accent rounded-full block animate-pulse"></span>

@@ -32,39 +32,38 @@ const Hero = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Your AI-Powered
-            <br />
-            <span className="text-gradient">Travel Assistant</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-center">
+            <span className="block">Your AI-Powered</span>
+            <span className="block text-gradient">Travel Assistant</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed text-center">
             Experience world-class travel planning with SyncTrek's multi-agent AI architecture. 
             Create personalized itineraries that perfectly match your preferences.
           </p>
 
           {/* Key Features Preview */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12 text-sm md:text-base">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6 mb-12 text-sm md:text-base">
             <div className="flex items-center gap-2 text-muted-foreground">
-              <div className="w-2 h-2 bg-synctrek-accent rounded-full"></div>
-              Multi-Agent AI System
+              <div className="w-2 h-2 bg-synctrek-accent rounded-full flex-shrink-0"></div>
+              <span className="whitespace-nowrap">Multi-Agent AI System</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
-              <div className="w-2 h-2 bg-synctrek-primary rounded-full"></div>
-              Personalized Questionnaire
+              <div className="w-2 h-2 bg-synctrek-primary rounded-full flex-shrink-0"></div>
+              <span className="whitespace-nowrap">Personalized Questionnaire</span>
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
-              <div className="w-2 h-2 bg-synctrek-accent rounded-full"></div>
-              World-Class Itineraries
+              <div className="w-2 h-2 bg-synctrek-accent rounded-full flex-shrink-0"></div>
+              <span className="whitespace-nowrap">World-Class Itineraries</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               onClick={scrollToDownload}
-              className="btn-primary group"
+              className="btn-primary group w-full sm:w-auto"
             >
               Download Beta
               <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -72,29 +71,29 @@ const Hero = () => {
             <Button 
               onClick={scrollToFeatures}
               variant="outline"
-              className="btn-secondary"
+              className="btn-secondary w-full sm:w-auto"
             >
               Explore Features
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">AI</div>
-              <div className="text-sm text-muted-foreground">Multi-Agent System</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">AI</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Multi-Agent System</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">Beta</div>
-              <div className="text-sm text-muted-foreground">Testing Phase</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">Beta</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Testing Phase</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">Smart</div>
-              <div className="text-sm text-muted-foreground">Questionnaire</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">Smart</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Questionnaire</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">World</div>
-              <div className="text-sm text-muted-foreground">Class Quality</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary mb-2">World</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Class Quality</div>
             </div>
           </div>
         </div>
