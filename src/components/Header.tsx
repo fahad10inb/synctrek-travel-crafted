@@ -23,7 +23,7 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/40a10069-a4a6-4c86-872b-c6f391d229f6.png" 
                 alt="SyncTrek Logo" 
-                className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-lg object-contain"
+                className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-lg object-contain"
               />
             </div>
             <span className="text-xl md:text-2xl lg:text-3xl font-bold text-gradient whitespace-nowrap">SyncTrek</span>
