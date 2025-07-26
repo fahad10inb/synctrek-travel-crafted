@@ -122,15 +122,7 @@ const Download = () => {
             </div>
           </div>
 
-          {/* Contact for Business */}
-          <div className="mt-16 text-center">
-            <p className="text-muted-foreground mb-4">
-              Interested in business partnerships or investment opportunities?
-            </p>
-            <Button variant="outline" className="btn-secondary">
-              Contact Our Team
-            </Button>
-          </div>
+
         </div>
       </div>
     </section>

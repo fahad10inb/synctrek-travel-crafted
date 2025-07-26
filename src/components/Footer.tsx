@@ -346,15 +346,12 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center space-x-3">
                 <Mail size={16} />
-                <span className="text-sm">beta@synctrek.ai</span>
+                <span className="text-sm">ai.synctrek@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone size={16} />
-                <span className="text-sm">Available Soon</span>
-              </div>
+              
               <div className="flex items-center space-x-3">
                 <MapPin size={16} />
-                <span className="text-sm">Global Team</span>
+                <span className="text-sm">Kochi</span>
               </div>
             </div>
           </div>
