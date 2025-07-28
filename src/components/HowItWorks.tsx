@@ -90,7 +90,7 @@ const HowItWorks = () => {
                   <span className="text-2xl">🤖</span>
                 </div>
                 <h4 className="font-semibold mb-2">Advanced AI</h4>
-                <p className="text-sm text-muted-foreground">Multi-agent systems generate intelligent, context-aware travel plans</p>
+                <p className="text-sm text-muted-foreground">Multi-agent systems create smart, context-aware itineraries</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
