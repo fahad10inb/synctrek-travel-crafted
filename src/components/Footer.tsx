@@ -95,9 +95,7 @@ const Footer = () => {
                         <li>Withdraw consent at any time</li>
                     </ul>
 
-                    <h2 class="text-xl font-semibold text-gray-900 mt-8 mb-4">7. Cookies and Tracking</h2>
-                    <p class="mb-4">We use cookies and similar technologies to enhance your experience, analyze usage patterns, and improve our services. You can control cookie settings through your browser.</p>
-
+                  
                     <h2 class="text-xl font-semibold text-gray-900 mt-8 mb-4">8. Third-Party Services</h2>
                     <p class="mb-4">Our app may integrate with third-party services for payments, analytics, and travel bookings. These services have their own privacy policies, and we encourage you to review them.</p>
 
@@ -111,9 +109,14 @@ const Footer = () => {
                     <p class="mb-4">We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the "Last updated" date.</p>
 
                     <h2 class="text-xl font-semibold text-gray-900 mt-8 mb-4">12. Contact Us</h2>
-                    <p class="mb-4">If you have any questions about this Privacy Policy, please contact us at:</p>
-                    <p class="mb-2"><strong>Email:</strong> privacy@synctrek.ai</p>
-                    <p class="mb-8"><strong>Address:</strong> SyncTrek Privacy Team, [Your Address]</p>
+                    <p class="mb-4">
+                    If you have any questions about this Privacy Policy, please contact us at:<br>
+                    +971 507375374<br>
+                    +91 80789 92511
+                    </p>
+
+                    <p class="mb-2"><strong>Email:</strong> ai.synctrek@gmail.com</p>
+                    <p class="mb-8"><strong>Address:</strong> SyncTrek Team, kochi</p>
                 </div>
             </div>
         </section>
@@ -122,7 +125,7 @@ const Footer = () => {
         <section id="terms" class="doc-section mb-16">
             <div class="bg-white rounded-lg shadow-sm p-8">
                 <h1 class="text-3xl font-bold text-gray-900 mb-2">Terms of Service</h1>
-                <p class="text-gray-600 mb-8">Last updated: July 26, 2025</p>
+                <p class="text-gray-600 mb-8">Last updated: July 29, 2025</p>
 
                 <div class="prose prose-gray max-w-none">
                     <h2 class="text-xl font-semibold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
@@ -178,7 +181,7 @@ const Footer = () => {
                     <p class="mb-4">We may modify these terms at any time. Material changes will be communicated via email or in-app notification.</p>
 
                     <h2 class="text-xl font-semibold text-gray-900 mt-8 mb-4">14. Contact Information</h2>
-                    <p class="mb-8">For questions about these terms, contact us at: <strong>legal@synctrek.ai</strong></p>
+                    <p class="mb-8">For questions about these terms, contact us at: <strong>ai.synctrek@gmail.com</strong></p>
                 </div>
             </div>
         </section>
@@ -266,7 +269,7 @@ const Footer = () => {
                     <p class="mb-4">These Beta Terms supplement our main Terms of Service and Privacy Policy. In case of conflict, these Beta Terms take precedence for beta-related matters.</p>
 
                     <h2 class="text-xl font-semibold text-gray-900 mt-8 mb-4">12. Contact for Beta Issues</h2>
-                    <p class="mb-8">For beta-specific questions or issues, contact us at: <strong>beta@synctrek.ai</strong></p>
+                    <p class="mb-8">For beta-specific questions or issues, contact us at: <strong>ai.synctrek@gmail.com</strong></p>
                 </div>
             </div>
         </section>
